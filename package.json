@@ -1,0 +1,20 @@
+{
+  "name": "chatprototypes",
+  "version": "1.0.0",
+  "description": "da",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "translate": "translate.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cloudmersive-virus-api-client": "^1.1.6",
+    "express": "^4.17.1",
+    "firebase": "^7.9.2",
+    "formidable": "^1.2.2",
+    "multiparty": "^4.2.1",
+    "ssh2": "^0.8.8"
+  }
+}
