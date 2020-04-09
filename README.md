@@ -9,10 +9,15 @@ In the folder you downloaded to
 Using npm (if npm doesn't work install pnpm and the commands are the same just with pnpm):
 
 open command line or terminal and type the following commands
+
 npm init
+
 npm install express --save
+
 npm install firebase --save
+
 npm install formidable --save
+
 npm install cloudmersive-virus-api-client --save
 
 After all that go to server.js 
