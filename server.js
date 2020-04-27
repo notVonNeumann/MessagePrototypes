@@ -4,6 +4,15 @@ var formidable = require('formidable');
 var firebase = require('firebase');
 
 //Insert firebase config
+var firebaseConfig = {
+  apiKey: "AlzaSyCaHdzdzOyEegkjOFyBkM3eXDO5kLBti0U",
+  authDomain: "message-prototype-d1fa7.firebaseapp.com",
+  databaseURL: "https://message-prototype-d1fa7.firebaseio.com",
+  projectId: "message-prototype-d1fa7",
+  storageBucket: "message-prototype-d1fa7.appspot.com",
+  messagingSenderId: "629518913388",
+  appId: "1:629518913388:web:5983fc63a458f53e0b2d49"
+};
 
 var firebaseApp = firebase.initializeApp(firebaseConfig);
 
@@ -74,8 +83,8 @@ app.post('/apiviruscheck', (request,response) => {
 
     var defaultClient = CloudmersiveVirusApiClient.ApiClient.instance;
     var Apikey = defaultClient.authentications['Apikey'];
-    Apikey.apiKey = "";
-    
+    Apikey.apiKey = "5ef61ec5-f707-4964-ad4a-7d52e0fc6e3f";
+
     var api = new CloudmersiveVirusApiClient.ScanApi();
 
     var inputFile = fs.readFileSync(files.document.path);
@@ -85,15 +94,15 @@ app.post('/apiviruscheck', (request,response) => {
         console.error(error);
       } else {
         console.log('API called successfully. Returned data: ' + data);
-        
+
       }
     };
-    
+
     api.scanFile(Buffer.from(inputFile.buffer), callback);
 
   })
-  
 
 
 
-}); 
+
+});
